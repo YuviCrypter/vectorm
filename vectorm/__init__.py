@@ -1,1 +1,1 @@
-from client import VectORMClient
+from vectorm.client import VectORMClient

@@ -1,5 +1,5 @@
-from vectordb import VectorDB
-from vectordb_table import Table
+from vectorm.vectordb import VectorDB
+from vectorm.vectordb_table import Table
 
 class VectORMClient:
 
@@ -11,8 +11,6 @@ class VectORMClient:
     def create_if_not_exists(self,table_name: str):
         
         return Table(
-            search=self.vectordb.search,
-            insert=self.vectordb.insert,
-            update=self.vectordb.update,
-            delete=self.vectordb.delete,    
+            table_name,
+            self.vectordb 
         )
